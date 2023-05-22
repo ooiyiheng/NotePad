@@ -8,8 +8,8 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Button x:Name="btnOpen" HorizontalAlignment="Left" Margin="34,33,0,0" VerticalAlignment="Top" Height="34" Width="66" Content="開啓檔案"/>
-        <Button x:Name="btnSave" HorizontalAlignment="Left" Margin="119,33,0,0" VerticalAlignment="Top" Height="34" Width="66" Content="儲存"/>
-        <RichTextBox Margin="34,86,38,27" TextChanged="RichTextBox_TextChanged">
+        <Button x:Name="btnSave" HorizontalAlignment="Left" Margin="119,33,0,0" VerticalAlignment="Top" Height="34" Width="66" Content="儲存" Click="btnSave_Click"/>
+        <RichTextBox x:Name="rtbText" Margin="34,86,38,27" TextChanged="RichTextBox_TextChanged">
             <FlowDocument>
                 <Paragraph>
                     <Run Text="RichTextBox"/>
