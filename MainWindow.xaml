@@ -7,14 +7,19 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="btnOpen" HorizontalAlignment="Left" Margin="34,33,0,0" VerticalAlignment="Top" Height="34" Width="66" Content="開啓檔案" Click="btnOpen_Click"/>
-        <Button x:Name="btnSave" HorizontalAlignment="Left" Margin="119,33,0,0" VerticalAlignment="Top" Height="34" Width="66" Content="儲存" Click="btnSave_Click"/>
-        <RichTextBox x:Name="rtbText" Margin="34,86,27,26">
+        <Button x:Name="btnOpen" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" Height="28" Width="80" Content="開啓檔案" Click="btnOpen_Click"/>
+        <Button x:Name="btnSave" HorizontalAlignment="Left" Margin="95,20,0,0" VerticalAlignment="Top" Height="28" Width="82" Content="儲存" Click="btnSave_Click"/>
+        <RichTextBox x:Name="rtbText" Margin="10,56,10,10" SelectionChanged="rtbText_SelectionChanged" LostFocus="rtbText_LostFocus">
             <FlowDocument>
                 <Paragraph>
                     <Run Text="RichTextBox"/>
                 </Paragraph>
             </FlowDocument>
         </RichTextBox>
+        <ComboBox x:Name="cmbFontFamily" HorizontalAlignment="Left" Margin="182,23,0,0" VerticalAlignment="Top" Width="144" SelectionChanged="cmbFontFamily_SelectionChanged"/>
+        <ComboBox x:Name="cmbFontSize" HorizontalAlignment="Left" Margin="331,23,0,0" VerticalAlignment="Top" Width="64" SelectionChanged="cmbFontSize_SelectionChanged"/>
+        <Button x:Name="btnBold" HorizontalAlignment="Left" Margin="400,25,0,0" VerticalAlignment="Top" Width="20" Content="B" FontWeight="Bold" Click="btnBold_Click"/>
+        <Button x:Name="btnItalic" HorizontalAlignment="Left" Margin="425,25,0,0" VerticalAlignment="Top" Width="20" FontWeight="Bold" Content="I" FontStyle="Italic" Click="btnItalic_Click"/>
+        <Button x:Name="btnUnderline" HorizontalAlignment="Left" Margin="450,25,0,0" VerticalAlignment="Top" Width="20" Content="U" FontWeight="Bold" Click="btnUnderline_Click"/>
     </Grid>
 </Window>
